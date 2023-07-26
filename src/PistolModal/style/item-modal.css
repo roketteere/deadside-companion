@@ -1,0 +1,28 @@
+.table-title,
+.table-title-secondary {
+  background-color: #b0abab;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.responsive-table > .row {
+  display: flex;
+  flex-direction: row;
+}
+
+.responsive-table > .row > .col {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+li {
+  list-style-type: none;
+}
+/* Mobile view: Stack them vertically */
+/* @media (max-width: 767px) {
+  .responsive-table > .row {
+    flex-direction: column;
+  }
+} */

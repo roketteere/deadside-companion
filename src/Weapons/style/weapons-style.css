@@ -1,0 +1,7 @@
+.image-container {
+  overflow-y: auto;
+}
+.weapon-cover {
+  max-width: 300px;
+  padding: 5px;
+}

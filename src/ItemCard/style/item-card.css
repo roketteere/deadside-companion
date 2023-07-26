@@ -1,0 +1,7 @@
+.item-container {
+  overflow-y: auto;
+}
+.item-cover {
+  max-width: 300px;
+  padding: 5px;
+}

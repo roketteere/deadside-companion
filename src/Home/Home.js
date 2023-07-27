@@ -1,11 +1,21 @@
+// Components
 import ItemButton from "../ItemButton/ItemButton";
-import weaponIcon from "../images/icons/png/001-assault-rifle.png";
 import ItemCard from "../ItemCard/ItemCard";
-import AssaultRifle from "../AssaultRifle.js/AssaultRifle";
-import AssaultRifles from "../images/assault_rifles/AssaultRifles";
-import PistolModal from "../PistolModal/PistolModal";
-import Pistols from "../images/pistol_images/Pistols";
+
+// Images
+import weaponIcon from "../images/icons/png/001-assault-rifle.png";
 import pistolIcon from "../images/icons/png/002-gun.png";
+import shotgunIcon from "../images/icons/png/003-shotgun.png";
+import sniperIcon from "../images/icons/png/004-sniper-rifle.png";
+import smgIcon from "../images/icons/png/005-submachine-gun.png";
+import lmgIcon from "../images/icons/png/006-machine-gun.png";
+import rocketlauncherIcon from "../images/icons/png/007-rocket-launch.png";
+import meleeIcon from "../images/icons/png/008-fist.png";
+import grenadeIcon from "../images/icons/png/009-grenade.png";
+
+// Data
+import AssaultRifles from "../images/assault_rifles/AssaultRifles";
+import Pistols from "../images/pistol_images/Pistols";
 
 export default function Home() {
   return (
@@ -58,6 +68,21 @@ export default function Home() {
           />
         }
       />
+      <ItemButton title="Shotguns" icon={shotgunIcon} component={ItemCard} />
+      <ItemButton
+        title="Sniper Rifles"
+        icon={sniperIcon}
+        component={ItemCard}
+      />
+      <ItemButton title="SMGs" icon={smgIcon} component={ItemCard} />
+      <ItemButton title="LMGs" icon={lmgIcon} component={ItemCard} />
+      <ItemButton
+        title="Rocket Launchers"
+        icon={rocketlauncherIcon}
+        component={ItemCard}
+      />
+      <ItemButton title="Grenades" icon={grenadeIcon} component={ItemCard} />
+      <ItemButton title="Melee" icon={meleeIcon} component={ItemCard} />
     </>
   );
 }

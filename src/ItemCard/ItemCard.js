@@ -3,6 +3,7 @@ import ItemModal from "../ItemModal/ItemModal";
 import AssaultRifleModal from "../AssaultRifleModal/AssaultRifleModal";
 import Image from "react-bootstrap/Image";
 import "./style/item-card.css";
+import { Button } from "react-bootstrap";
 
 export default function ItemCard(item) {
   let count = 0;
@@ -87,6 +88,7 @@ export default function ItemCard(item) {
   return (
     <div className="item-container">
       <h2 className="title ms-3">{item.containerTitle}</h2>
+      
       <div className="item-card">
         {images.map((image, index) => {
           return (

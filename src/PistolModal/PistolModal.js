@@ -77,40 +77,35 @@ function PistolModal({
               <Col className="border">{sell}</Col>
             </Row>
             <Row className="text-center">
-              <Row>
-                <Col className="table-title-secondary border bg-warning ">
-                  Modifications
-                </Col>
-
+              <Col className="table-title-secondary border bg-warning">
+                Modifications
+              </Col>
+            </Row>
+            <Row>
+              <Col xs={12} md={6} className="table-title-secondary border">
+                <Row>Muzzle</Row>
                 <Row>
-                  <Col className="table-title-secondary border">Muzzle</Col>
-
-                  <Col className="table-title-secondary border">Flashlight</Col>
+                  {muzzle &&
+                    muzzle.map((muzzle, index) => (
+                      <p className="m-0 border-bottom" key={index}>
+                        {muzzle}
+                      </p>
+                    ))}
                 </Row>
+              </Col>
+            </Row>
+            <Row>
+              <Col xs={12} md={6} className="border">
+                <Row>Flashlight</Row>
                 <Row>
-                  <Col className="border">
-                    {muzzle &&
-                      muzzle.map((muzzle, index) => {
-                        return (
-                          <p className="m-0 border-bottom" key={index}>
-                            {muzzle}
-                          </p>
-                        );
-                      })}
-                  </Col>
-
-                  <Col className="border">
-                    {flashlight &&
-                      flashlight.map((flashlight, index) => {
-                        return (
-                          <p className="m-0 border-bottom" key={index}>
-                            {flashlight}
-                          </p>
-                        );
-                      })}
-                  </Col>
+                  {flashlight &&
+                    flashlight.map((flashlight, index) => (
+                      <p className="m-0 border-bottom" key={index}>
+                        {flashlight}
+                      </p>
+                    ))}
                 </Row>
-              </Row>
+              </Col>
             </Row>
           </Container>
           <br />

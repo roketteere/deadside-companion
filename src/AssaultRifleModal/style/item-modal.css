@@ -7,7 +7,7 @@
 
 .responsive-table > .row {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .responsive-table > .row > .col {

@@ -78,54 +78,49 @@ function AssaultRifleModal({
               <Col className="border">{buy}</Col>
               <Col className="border">{sell}</Col>
             </Row>
-            <Row className="text-center">
+            <Row className="text-center table-title-secondary border bg-warning">
               <Row>
-                <Col className="table-title-secondary border bg-warning ">
-                  Modifications
-                </Col>
-
-                <Row>
-                  <Col className="table-title-secondary border">Scope</Col>
-                  <Col className="table-title-secondary border">Muzzle</Col>
-                  <Col className="table-title-secondary border">
-                    Extended Mag
-                  </Col>
-                  <Col className="table-title-secondary border">Flashlight</Col>
-                </Row>
-                <Row>
-                  <Col className="border">
-                    {scope &&
-                      scope.map((scope, index) => {
-                        return (
-                          <p className="m-0 border-bottom" key={index}>
-                            {scope}
-                          </p>
-                        );
-                      })}
-                  </Col>
-                  <Col className="border">
-                    {muzzle &&
-                      muzzle.map((muzzle, index) => {
-                        return (
-                          <p className="m-0 border-bottom" key={index}>
-                            {muzzle}
-                          </p>
-                        );
-                      })}
-                  </Col>
-                  <Col className="border">{magazineMod}</Col>
-                  <Col className="border">
-                    {flashlight &&
-                      flashlight.map((flashlight, index) => {
-                        return (
-                          <p className="m-0 border-bottom" key={index}>
-                            {flashlight}
-                          </p>
-                        );
-                      })}
-                  </Col>
-                </Row>
+                <Col>Modifications</Col>
               </Row>
+            </Row>
+            <Row>
+              <Col className="table-title-secondary border">Scope</Col>
+              <Col className="table-title-secondary border">Muzzle</Col>
+              <Col className="table-title-secondary border">Extended Mag</Col>
+              <Col className="table-title-secondary border">Flashlight</Col>
+            </Row>
+            <Row>
+              <Col className="border">
+                {scope &&
+                  scope.map((scope, index) => {
+                    return (
+                      <p className="m-0 border-bottom" key={index}>
+                        {scope}
+                      </p>
+                    );
+                  })}
+              </Col>
+              <Col className="border">
+                {muzzle &&
+                  muzzle.map((muzzle, index) => {
+                    return (
+                      <p className="m-0 border-bottom" key={index}>
+                        {muzzle}
+                      </p>
+                    );
+                  })}
+              </Col>
+              <Col className="border">{magazineMod}</Col>
+              <Col className="border">
+                {flashlight &&
+                  flashlight.map((flashlight, index) => {
+                    return (
+                      <p className="m-0 border-bottom" key={index}>
+                        {flashlight}
+                      </p>
+                    );
+                  })}
+              </Col>
             </Row>
           </Container>
           <br />

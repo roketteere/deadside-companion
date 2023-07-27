@@ -22,6 +22,9 @@ export default function ItemButton({ icon, title, component }) {
         {title}
       </Button>
       <Offcanvas show={show} onHide={closeHandler}>
+        <Button className="btn-danger p-1 m-1" onClick={closeHandler}>
+          Close Menu
+        </Button>
         {component}
       </Offcanvas>
       <Container fluid className="bg-body-tertiary">
